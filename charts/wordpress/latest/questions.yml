@@ -22,3 +22,23 @@ questions:
   description: "env[1].value"
   label: env1-value
   type: string
+- variable: env[2].name
+  default: ""
+  description: "env[2].name"
+  label: env2-name
+  type: string
+- variable: env[2].value
+  default: ""
+  description: "env[2].value"
+  label: env2-value
+  type: string
+- variable: env[3].name
+  default: ""
+  description: "env[3].name"
+  label: env3-name
+  type: string
+- variable: env[3].value
+  default: ""
+  description: "env[3].value"
+  label: env3-value
+  type: string
