@@ -1,0 +1,26 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: nginx
+  name: nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: nginx
+  template:
+    metadata:
+      labels:
+        run: nginx
+    spec:
+      containers:
+      - env:
+         - name: test
+          value: test
+        {{- range .Values.env }}
+        - name: {{ .name }}
+          value: {{ .value }}
+        {{- end }}
+        image: nginx
+        name: nginx
