@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - env:
-         - name: test
+        - name: test
           value: test
         {{- range .Values.env }}
         - name: {{ .name }}
