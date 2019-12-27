@@ -18,9 +18,7 @@ spec:
       - env:
         - name: test
           value: test
-        {{- range .Values.env }}
-        - name: {{ .name }}
-          value: {{ .value }}
-        {{- end }}
+        - name: {{ env.name }}
+          value: {{ env.value }}
         image: nginx
         name: nginx
