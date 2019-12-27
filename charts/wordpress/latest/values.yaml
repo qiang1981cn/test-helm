@@ -1,3 +1,3 @@
 env:
-- name: tensorflow-gpu2\.resources\.limits\.nvidia.com/gpu
+- name: tensorflow-gpu2.resources.limits.nvidia.com/gpu
   value: 5
