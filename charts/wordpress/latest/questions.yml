@@ -2,7 +2,7 @@ categories:
 - Blog
 - CMS
 questions:
-  - variable: tensorflow-gpu2\.resources\.limits\.nvidia\.com/gpu
+  - variable: tensorflow-gpu2.resources.limits.nvidia.com/gpu
     label: request gpu
     type: int
     required: false
