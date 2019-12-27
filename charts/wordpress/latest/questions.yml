@@ -2,43 +2,8 @@ categories:
 - Blog
 - CMS
 questions:
-- variable: env[0].name
-  default: ""
-  description: "env[0].name"
-  label: env0-name
-  type: string
-- variable: env[0].value
-  default: ""
-  description: "env[0].value"
-  label: env0-value
-  type: string
-- variable: env[1].name
-  default: ""
-  description: "env[1].name"
-  label: env1-name
-  type: string
-- variable: env[1].value
-  default: ""
-  description: "env[1].value"
-  label: env1-value
-  type: string
-- variable: env[2].name
-  default: ""
-  description: "env[2].name"
-  label: env2-name
-  type: string
-- variable: env[2].value
-  default: ""
-  description: "env[2].value"
-  label: env2-value
-  type: string
-- variable: env[3].name
-  default: ""
-  description: "env[3].name"
-  label: env3-name
-  type: string
-- variable: env[3].value
-  default: ""
-  description: "env[3].value"
-  label: env3-value
-  type: string
+  - variable: tensorflow-gpu2.resources.limits.nvidia.com/gpu
+    label: request gpu
+    type: int
+    required: false
+    default: 2
