@@ -18,7 +18,7 @@ spec:
       - env:
         - name: test
           value: test
-        - name: {{ .Values.env.name }}
-          value: {{ .Values.env.value }}
+        - name: aaabbb
+          value: {{ .Values.env.tensorflow-gpu2.resources.limits.nvidia.com/gpu }}
         image: nginx
         name: nginx
