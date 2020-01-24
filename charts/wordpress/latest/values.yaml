@@ -1,2 +1,4 @@
 env:
   tensorflow-gpu2.resources.limits.nvidia.com/gpu: 5
+  test2: 2
+
