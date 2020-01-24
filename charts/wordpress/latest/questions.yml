@@ -7,7 +7,8 @@ questions:
     type: int
     required: false
     default: 2
-  - variable: env.tensorflow-gpu2.resources.limits.nvidia.com/gpu
+  - variable: |
+      env.tensorflow-gpu2.resources.limits.nvidia.com/gpu
     label: request gpu
     type: int
     required: false
