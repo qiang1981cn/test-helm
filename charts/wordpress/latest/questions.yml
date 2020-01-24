@@ -3,11 +3,11 @@ categories:
 - CMS
 questions:
   - variable: test2
-    label: common gpu
+    label: common variable
     type: int
     required: false
     default: 4
-  - label: request gpu2
+  - label: gpu variable
     type: int
     required: false
     default: 3
