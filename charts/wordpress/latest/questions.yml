@@ -2,13 +2,13 @@ categories:
 - Blog
 - CMS
 questions:
-  - variable: common/gpu
+  - variable: test2
     label: common gpu
     type: int
     required: false
-    default: 2
+    default: 4
   - label: request gpu2
     type: int
     required: false
-    default: 2
+    default: 3
     variable: tensorflow-gpu2.resources.limits.nvidia.com/gpu
