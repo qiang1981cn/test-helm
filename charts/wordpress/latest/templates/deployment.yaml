@@ -16,9 +16,11 @@ spec:
     spec:
       containers:
       - env:
-        - name: test
+        - name: test1
           value: test
-        - name: aaabbb
-          value: {{ .Values.env.tensorflow-gpu2.resources.limits.nvidia.com/gpu }}
+        - name: test2
+          value: {{ .Values.env.test2 | quote }}
+        - name: test3
+          value: {{ .Values.env.tensorflow-gpu2.resources.limits.nvidia.com/gpu | quote }}
         image: nginx
         name: nginx
