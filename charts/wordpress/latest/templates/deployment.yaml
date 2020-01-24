@@ -21,6 +21,6 @@ spec:
         - name: test2
           value: {{ .Values.test2 | quote }}
         - name: test3
-          value: {{ index .Values "tensorflow-gpu2.resources.limits.nvidia.com/gpu" }}
+          value: {{ index .Values "tensorflow-gpu2.resources.limits.nvidia.com/gpu" | quote }}
         image: nginx
         name: nginx
